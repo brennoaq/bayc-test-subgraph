@@ -1,0 +1,16 @@
+{
+  "name": "bayc-brenno",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ bayc-brenno",
+    "create-local": "graph create --node http://localhost:8020/ bayc-brenno",
+    "remove-local": "graph remove --node http://localhost:8020/ bayc-brenno",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 bayc-brenno"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.30.3",
+    "@graphprotocol/graph-ts": "0.27.0"
+  }
+}
